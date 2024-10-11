@@ -100,13 +100,3 @@ crypto-vista/
 ## API Usage and Rate Limiting
 
 This application uses the CoinGecko API to fetch cryptocurrency data. Please note that there are rate limits for API requests. The application implements caching to minimize the number of requests and handle potential API unavailability.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
