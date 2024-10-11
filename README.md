@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Crypto Vista
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crypto Vista is a modern web application for tracking and analyzing cryptocurrencies, built with React and styled-components. It provides real-time data, portfolio management, and detailed information about various cryptocurrencies.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 📊 Real-time cryptocurrency data display
+- 💼 Personal cryptocurrency portfolio management
+- 🌓 Light and dark theme support
+- 📈 Detailed information and price charts for each cryptocurrency
+- 🚀 Optimized performance with data caching
+- 🔍 Cryptocurrency search with autocomplete functionality
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- React Router
+- Styled Components
+- Axios
+- React Table
+- Recharts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure you have the following installed on your local machine:
 
-### `npm run build`
+- Node.js (version 14.0.0 or higher)
+- npm (usually comes with Node.js)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   git clone https://github.com/s1rusOne/crypto_vista.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   cd crypto-vista
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the application in development mode, run:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building for Production
 
-### Code Splitting
+To create a production-ready build, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm run build
+```
 
-### Analyzing the Bundle Size
+This will create an optimized version of the application in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+```
+crypto-vista/
+  ├── src/
+  │   ├── components/
+  │   │   ├── Dashboard.js
+  │   │   ├── CoinDetails.js
+  │   │   ├── Portfolio.js
+  │   │   ├── Header.js
+  │   │   └── ErrorBoundary.js
+  │   ├── contexts/
+  │   │   └── ThemeProvider.js
+  │   ├── styles/
+  │   │   └── StyledComponents.js
+  │   ├── App.js
+  │   └── index.js
+  ├── public/
+  ├── package.json
+  └── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+- **Dashboard**: The main page displays a list of cryptocurrencies with current prices and 24-hour changes.
+- **Coin Details**: Click on any cryptocurrency to view detailed information and price charts.
+- **Portfolio**: Add cryptocurrencies to your portfolio to track their value. The portfolio data persists across sessions.
+- **Theme Toggle**: Use the theme toggle in the header to switch between light and dark themes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## API Usage and Rate Limiting
 
-### Deployment
+This application uses the CoinGecko API to fetch cryptocurrency data. Please note that there are rate limits for API requests. The application implements caching to minimize the number of requests and handle potential API unavailability.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request

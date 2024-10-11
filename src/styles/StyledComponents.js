@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const AppContainer = styled.div`
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 20px;
   background-color: ${props => props.theme.darkMode ? '#1a1a1a' : '#ffffff'};
@@ -11,8 +11,9 @@ export const AppContainer = styled.div`
 `;
 
 export const Header = styled.header`
-  background-color: ${props => props.theme.darkMode ? '#2c3e50' : '#f8f9fa'};
+  //background-color: ${props => props.theme.darkMode ? '#2c3e50' : '#f8f9fa'};
   padding: 1rem 0;
+  margin: 15px;
 `;
 
 export const Nav = styled.nav`
