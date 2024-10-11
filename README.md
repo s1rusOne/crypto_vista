@@ -1,89 +1,70 @@
-# Task Management System
+# Getting Started with Create React App
 
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A robust and scalable task management system built with TypeScript and Express.js. This project demonstrates best practices in building a RESTful API with TypeScript, including task creation, updates, analytics, and more.
+## Available Scripts
 
-## Features
+In the project directory, you can run:
 
-- Create, read, update, and delete tasks
-- Assign tasks to users
-- Track task status (todo, in-progress, done)
-- Task analytics (productivity, task distribution by status)
-- Identify the most productive user
+### `npm start`
 
-## Prerequisites
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Before you begin, ensure you have met the following requirements:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Node.js (v14.0.0 or later)
-- npm (v6.0.0 or later)
+### `npm test`
 
-## Installation
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. Clone the repository:
+### `npm run build`
 
-   ```
-   git clone https://github.com/s1rusOne/task-management-system.git
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. Navigate to the project directory:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-   ```
-   cd task-management-system
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3. Install the dependencies:
-   ```
-   npm install
-   ```
+### `npm run eject`
 
-## Configuration
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. Create a `.env` file in the root directory:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```
-   touch .env
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-2. Add the following environment variables:
-   ```
-   PORT=3000
-   ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Usage
+## Learn More
 
-### Starting the Server
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To start the server in development mode with hot-reloading:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-npm run dev
-```
+### Code Splitting
 
-To build and start the server in production mode:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-```
-npm run build
-npm start
-```
+### Analyzing the Bundle Size
 
-### Running the Client Example
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-We've provided a client example to demonstrate how to interact with the API. To run it:
+### Making a Progressive Web App
 
-```
-npm run client
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## API Endpoints
+### Advanced Configuration
 
-- `POST /api/tasks`: Create a new task
-- `GET /api/tasks`: Retrieve all tasks
-- `PUT /api/tasks/:id`: Update a task
-- `DELETE /api/tasks/:id`: Delete a task
-- `GET /api/analytics/productivity`: Get overall productivity
-- `GET /api/analytics/status`: Get tasks distribution by status
-- `GET /api/analytics/most-productive-user`: Get the most productive user
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
